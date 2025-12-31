@@ -15,16 +15,16 @@
     grid-template-columns: 1fr;
     gap: 60px;
   }
-  
+
   .promo__text {
     padding-left: 0;
   }
-  
+
   .promo__title-main,
   .promo__title-sub {
     font-size: 48px;
   }
-  
+
   .promo__title-bg {
     font-size: 100px;
   }
@@ -128,4 +128,3 @@
   height: 20px;
   object-fit: contain;
 }
-
