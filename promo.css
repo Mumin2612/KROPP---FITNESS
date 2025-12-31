@@ -1,0 +1,131 @@
+.promo {
+  padding: 100px 0;
+  background-color: var(--bg);
+}
+
+.promo__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+@media (max-width: 968px) {
+  .promo__content {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  
+  .promo__text {
+    padding-left: 0;
+  }
+  
+  .promo__title-main,
+  .promo__title-sub {
+    font-size: 48px;
+  }
+  
+  .promo__title-bg {
+    font-size: 100px;
+  }
+}
+
+.promo__image {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.promo__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.promo__text {
+  padding-left: 40px;
+}
+
+.promo__title-wrapper {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.promo__title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.promo__title-bg {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-size: 140px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.05);
+  z-index: 0;
+  line-height: 1;
+}
+
+.promo__title-main {
+  position: relative;
+  font-size: 64px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text);
+  line-height: 1.1;
+  z-index: 1;
+}
+
+.promo__title-sub {
+  position: relative;
+  font-size: 64px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text);
+  line-height: 1.1;
+  z-index: 1;
+}
+
+.promo__description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin-bottom: 40px;
+  max-width: 500px;
+}
+
+.promo__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  border: 2px solid var(--text);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.promo__button:hover {
+  background-color: var(--text);
+  color: var(--bg);
+}
+
+.promo__button-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
