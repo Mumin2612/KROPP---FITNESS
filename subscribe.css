@@ -1,0 +1,120 @@
+.subscribe {
+  padding: 140px 0;
+  background-color: #0b1218;
+}
+
+.subscribe__content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subscribe__title {
+  position: relative;
+  margin-bottom: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.subscribe__title-plus {
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1;
+  margin-bottom: 27px;
+}
+
+.subscribe__title-bg {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 165px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.08);
+  z-index: 0;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.subscribe__title-main {
+  position: relative;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text);
+  line-height: 1.1;
+  z-index: 1;
+}
+
+.subscribe__subtitle {
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 31px;
+  letter-spacing: 0.06em;
+  margin-bottom: 52px;
+  margin-left: 30px;
+}
+
+.subscribe__form {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe__input {
+  padding: 16px 24px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 27px;
+  color: var(--text);
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.3s;
+  min-width: 280px;
+}
+
+.subscribe__input::placeholder {
+  color: var(--muted);
+}
+
+.subscribe__input:focus {
+  border-color: var(--text);
+}
+
+.subscribe__button-img {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .subscribe {
+    padding: 80px 0;
+  }
+
+  .subscribe__title-main {
+    font-size: 48px;
+  }
+
+  .subscribe__title-bg {
+    font-size: 120px;
+  }
+
+  .subscribe__form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .subscribe__input,
+  .subscribe__button-img {
+    width: 100%;
+  }
+}
