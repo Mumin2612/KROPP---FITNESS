@@ -1,5 +1,6 @@
 .header {
   padding: 24px var(--pad);
+  background-color: #0b1218;
 }
 
 .header__content {
@@ -20,8 +21,8 @@
 }
 
 .header__logo-img {
-  height: 40px;
-  width: auto;
+  height: 24px;
+  width: 180px;
   object-fit: contain;
 }
 
