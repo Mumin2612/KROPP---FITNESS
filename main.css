@@ -6,7 +6,30 @@
 @import "./promo.css";
 @import "./feature.css";
 @import "./join.css";
+@import "./subscribe.css";
 @import "./map.css";
+@import "./fit-family.css";
 @import "./gallery.css";
 @import "./bmi.css";
 @import "./brands.css";
+@import "./footer.css";
+
+.pixel-perfect {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 1920px;
+  height: 100vh;
+
+  background-image: url("/pixel.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 1920px auto;
+
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: 99999;
+}
+
