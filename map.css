@@ -1,0 +1,137 @@
+.map {
+  padding: 0;
+  margin: 0;
+  background-color: #000000;
+  width: 100%;
+}
+
+.map__container {
+  display: flex;
+  gap: 0;
+  align-items: stretch;
+  min-height: 470px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.map__image {
+  position: relative;
+  flex: 0 0 50%;
+  width: 50%;
+  height: 100%;
+  min-height: 470px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.map__content {
+  width: 50%;
+  padding: 0 60px;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.map__title {
+  position: relative;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.map__title-plus {
+  position: absolute;
+  left: -28px;
+  top: 0;
+  font-size: 35px;
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1;
+}
+
+.map__title-bg {
+  margin-bottom: 14px;
+  position: absolute;
+  top: -57px;
+  left: 55px;
+  font-size: 140px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.2);
+  z-index: 0;
+  line-height: 1;
+}
+
+.map__title-main {
+  position: relative;
+  font-size: 52px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text);
+  line-height: 52px;
+  z-index: 1;
+}
+
+.map__description {
+  width: 480px;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 28px;
+  color: var(--muted);
+  margin-bottom: 37px;
+  text-align: center;
+}
+
+.map__button {
+  display: inline-block;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.map__button:hover {
+  opacity: 0.8;
+}
+
+.map__button-img {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 968px) {
+  .map__container {
+    flex-direction: column;
+  }
+
+  .map__image {
+    width: 100%;
+    min-height: 500px;
+  }
+
+  .map__content {
+    width: 100%;
+    padding: 60px 40px;
+  }
+
+  .map__title-main {
+    font-size: 48px;
+  }
+
+  .map__title-bg {
+    font-size: 100px;
+  }
+}
