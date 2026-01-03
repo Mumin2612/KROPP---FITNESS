@@ -80,9 +80,10 @@
   font-weight: 900;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.2);
   z-index: 0;
   line-height: 1;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
 }
 
 .promo__title-main {
