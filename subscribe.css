@@ -38,6 +38,7 @@
   z-index: 0;
   line-height: 1;
   white-space: nowrap;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
 }
 
 .subscribe__title-main {
@@ -118,3 +119,6 @@
     width: 100%;
   }
 }
+
+
+
